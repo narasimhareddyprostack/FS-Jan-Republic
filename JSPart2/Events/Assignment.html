@@ -1,0 +1,15 @@
+<button onmouseover="mouseoverFun()" id="one">One</button>
+
+<button onmouseout="mouseoutFun()" id="two">Two</button>
+<button>Three</button>
+<button>Four</button>
+
+<script>
+    function mouseoverFun() {
+        document.getElementById('one').style.background = "blue";
+
+    }
+    function mouseoutFun() {
+        document.getElementById("two").style.background = "yellow"
+    }
+</script>
