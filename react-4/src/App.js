@@ -1,11 +1,15 @@
 import React from 'react'
-import Message from './Message/Message'
+import Navbar from './Navbar/Navbar'
+/* import './assets/css/rajnikanth.css' */
+import Hero from './Hero/Hero'
+import Actress from './Actress/Actress'
+
 class App extends React.Component {
     render() {
         return <div>
-            <h1>App Component.....</h1>
-            <Message />
-
+            <Navbar />
+            <Actress />
+            <Hero />
         </div>
     }
 }
