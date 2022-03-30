@@ -1,13 +1,12 @@
 import React from 'react'
-import Message from './StateEx/Message'
 import Navbar from './Navbar/Navbar'
-import Counter from './StateEx/Counter'
-import Product from './StateEx/Product'
+import CompA from './PropsEx/CompA'
+import ProductData from './Product/ProductData'
 class App extends React.Component {
     render() {
         return <div>
             <Navbar />
-            <Product />
+            <ProductData />
         </div>
     }
 }
