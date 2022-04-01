@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Message from './EventBindingEx/Message'
-/* import Message from './StateEx/Message'
-import Counter from './StateEx/Counter'
-import Product from './StateEx/Product'
- */class App extends React.Component {
-    render() {
-        return <div>
+import Employee from './EmployeeData/Employee'
+import Album from './EmployeeData/Album'
+const App = () => {
+    return (
+        <div>
             <Navbar />
-            <Message />
+            <Album />
         </div>
-    }
+    )
 }
+
 export default App
+
