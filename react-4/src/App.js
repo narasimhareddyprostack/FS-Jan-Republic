@@ -1,4 +1,5 @@
 import React from 'react'
+import User from './Users/User'
 import Navbar from './Navbar/Navbar'
 import Login from './FormEx/Login'
 import Registration from './FormEx/Registration'
@@ -9,6 +10,7 @@ const App = () => {
             <Router>
                 <Navbar />
                 <Switch>
+                    <Route path="/user" component={User} />
                     <Route path="/regi" component={Registration} />
                     <Route path="/login" component={Login} />
 
