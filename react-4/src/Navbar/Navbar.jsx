@@ -1,19 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-const Navbar = () => {
-    return (
-        <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-            <Link to="/home" className="navbar-brand">React Hook Example</Link>
+class Navbar extends Component {
+    render() {
+        return <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+            <Link to="/home" className="navbar-brand">React Contact App</Link>
             <div className="ml-auto">
                 <ul className="navbar-nav">
-                    <li className="nav-list"><Link className="nav-link" to="/user">User - Axios</Link> </li>
-                    <li className="nav-list"><Link className="nav-link" to="/login">Login</Link> </li>
-                    <li className="nav-list"><Link className="nav-link" to="/regi">Registration</Link> </li>
-
+                    <li className="nav-item"> <Link className="nav-link" to="/home">Home</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/contacts"> Contacts </Link></li>
                 </ul>
             </div>
         </nav>
-    )
+    }
 }
 
 export default Navbar

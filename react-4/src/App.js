@@ -1,23 +1,20 @@
-import React from 'react'
-import User from './Users/User'
+import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import Login from './FormEx/Login'
-import Registration from './FormEx/Registration'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-const App = () => {
-    return (
-        <div>
-            <Router>
-                <Navbar />
-                <Switch>
-                    <Route path="/user" component={User} />
-                    <Route path="/regi" component={Registration} />
-                    <Route path="/login" component={Login} />
-
-                </Switch>
-            </Router>
-        </div>
-    )
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import ContactApp from './ContactApp/ContactApp'
+export class App extends Component {
+    render() {
+        return (
+            <div>
+                <Router>
+                    <Navbar />
+                    <Switch>
+                        <Route path="/contacts" component={ContactApp} />
+                    </Switch>
+                </Router>
+            </div>
+        )
+    }
 }
 
 export default App
