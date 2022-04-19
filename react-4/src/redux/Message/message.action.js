@@ -4,8 +4,8 @@ let GM = "GM"
 let GN = "GN"
 
 //actions
-let gmAction = async() => {
-    await Axios.get(url).then().catch();
+let gmAction = () => {
+    //await Axios.get(url).then().catch();
     return { type: GM, payload: "Good Morning MR Anil" }
 }
 let gnAction = () => {
