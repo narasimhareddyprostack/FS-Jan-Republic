@@ -1,13 +1,13 @@
 import { GM, GN } from './message.action'
 let initialState = {
-    message: "Hello"
+    message: "Hello........MR Rajni Kanth"
 }
 let messageReducer = (state = initialState, action) => {
     console.log(action);
     console.log(action.type)
     switch (action.type) {
         case GM:
-            return { message: "Good Morning !....." }
+            return { message: action.payload }
         case GN:
             return { message: "Good Night!...." }
         default:
