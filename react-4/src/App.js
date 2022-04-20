@@ -1,16 +1,17 @@
 import React from 'react'
-import Message from './Message/Message'
-import { Provider } from 'react-redux'
+import Product from './Product/Product'
 import { store } from './redux/store'
+import { Provider } from 'react-redux'
 const App = () => {
-    return (
+    return <div>
         <Provider store={store}>
-            <div>
-                <Message />
+            <nav className="navbar navbar-dark bg-dark">
+                <a href="#" className="navbar-brand">Redux Example 2</a>
+            </nav>
+            <Product />
+        </Provider>
 
-            </div>
-        </Provider >
-    )
+    </div>
 }
 
 export default App
